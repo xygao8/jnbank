@@ -1,0 +1,16 @@
+#服务对外暴露端口
+server:
+  port: 18790
+
+#root 日志级别以info级别输出
+#com.iflytek.bank包的日志级别以debug级别输出
+logging:
+  level: {
+      root: warn,
+      com.iflytek.bank: info
+  }
+
+#bank.config
+bank:
+  config:
+    branchFilePath: D:/interPlat/test/济宁银行网点名称-6.10.xls
